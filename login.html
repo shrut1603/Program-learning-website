@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Login & Registration Form </title>
+    <link rel="stylesheet" href="C:\Users\shrut\OneDrive\Desktop\prasadNew folder\css\login1.css">
+      <script type="text/javascript">
+        function validate()
+        {
+            var username=document.getElementById("uname");
+              var password=document.getElementById("pass");
+            if(username.value=="" || password.value=="")
+                {
+                    alert("no blank values allowed");
+                return:false;
+                }
+            else{
+return:true;
+            }
+        }
+         </script>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+        <div class="button-box">
+           <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="images/facebook.png" alt="">
+            <img src="images/instagram%20(1).png" alt="">
+            <img src="images/twitter%20(1).png" alt="">
+        </div>
+        <form onsubmit="validate()" id="login" class="input-group" action="C:\Users\shrut\OneDrive\Desktop\prasadNew folder\index.html">
+            <input id="uname" type="text" class="input-field" placeholder="user Id" required>
+            <input id="pass" type="password" class="input-field" placeholder="Enter password" required>
+            <button type="submit" class="submit-btn" onclick="validate()">Login</button>
+         </form>
+           <form  onsubmit="validate()"id="register" class="input-group" action="C:\Users\shrut\OneDrive\Desktop\prasadNew folder\index.html">
+            <input type="text" class="input-field" placeholder="user Id" required>
+            <input type="text" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter password" required>
+            <button type="submit" class="submit-btn">Register</button>
+         </form>
+        </div>  
+    </div>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+     var z=document.getElementById("btn");
+    function register(){
+        x.style.left="-400px";  
+        y.style.left="50px"; 
+        z.style.left="110px";
+    }
+    function login(){
+        x.style.left="50px";  
+        y.style.left="450px"; 
+        z.style.left="0px";
+    }
+     </script>
+</body>
+</html>
