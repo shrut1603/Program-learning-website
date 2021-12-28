@@ -40,36 +40,21 @@ body {
 
 .header .nav ul li {
     display: flex;
+  align-items: center;
 
 }
 
 
 .header .nav ul li a {
     color: #333;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     align-items: center;
     padding: 0.25rem 0;
-    margin: 10px 1.80rem;
+    margin: 20px 40px;
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
-
 }
-
-.header .logo img .white {
-    height: 120px;
-    width: auto;
-    margin-top: 5px;
-}
-
-.header .nav ul li.logo .black {
-    display: none;
-}
-
-.header .nav ul li.logo a {
-    margin: 0 5rem;
-}
-
 
 
 
@@ -1149,7 +1134,8 @@ a:hover {
 }
 
 #testimonial .box-container .box {
-    max-width: 60rem;
+    height: fit-content;
+    max-width: 70rem;
     background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
